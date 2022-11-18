@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+.destination .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  padding: 50px 5%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.dest-image img {
+  width: 60%;
+  animation: rotate 50s infinite linear;
+}
+.text {
+  text-align: center;
+  padding: 20px 0;
+}
+.text h2 {
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.dest-image {
+  margin-top: 30px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text span {
+  margin: 0 10px;
+  font-weight: 400;
+}
+.content li {
+  list-style: none;
+  margin: 0 10px;
+}
+.content button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+button.des-white {
+  border-bottom: 2px solid #fff;
+  transform: all 0.5s ease-in;
+}
+.content button:hover{
+  border-bottom: 2px solid gray;
+  transition: all 0.5s ease-in-out;
+}
+.border {
+  border-bottom: 2px solid white;
+}
+.name-content h1 {
+  text-align: center;
+  font-size: 66px;
+  font-weight: 200;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+.name-content p {
+  margin: 0 auto;
+  font-family: "Barlow", sans-serif;
+  font-size: 15.9px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px 20px 0;
+}
+.dest-content hr {
+  width: 90%;
+  border: none;
+  padding: 20px 0;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(141, 123, 123, 0.494);
+}
+.distance {
+  text-align: center;
+}
+.distance span {
+  margin-top: 10px;
+}
+.distance li {
+  margin: 20px 0;
+  letter-spacing: 2px;
+  list-style: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 200;
+}
+.distance span {
+  display: block;
+  font-weight: 400;
+  font-family: "Bellefair", serif;
+
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.distance ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+@keyframes rotate {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media all and (min-width: 768px) {
+  .dest-image img {
+    width: 50%;
+  }
+  .text h2 {
+    text-align: left;
+  }
+  .name-content p {
+    max-width: 620px;
+  }
+  .dest-content hr {
+    width: 80%;
+  }
+  .dest-image {
+    margin: 60px 0 30px;
+  }
+  .content li {
+    margin: 0 20px;
+  }
+  .distance ul {
+    flex-direction: row;
+  }
+  .text h2{
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .dest-image img {
+    width: 70%;
+  }
+  .dest-content {
+    margin-top: 7rem;
+  }
+  .destination .container {
+    flex-direction: row;
+    padding: 3px 30px 2%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content {
+    justify-content: flex-start;
+  }
+  .name-content h1 {
+    text-align: left;
+  }
+  .content:nth-child(1) {
+    margin-left: 0;
+  }
+  .name-content p {
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 20px 0 0;
+    width: 520px;
+  }
+  .distance ul {
+    justify-content: start;
+    gap: 100px;
+  }
+  .dest-content hr {
+    width: 100%;
+  }
+  .text h2{
+    font-size: 28px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .dest-image img {
+    width: 80%;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .dest-image img {
+    width: 100%;
+  }
+
+}
